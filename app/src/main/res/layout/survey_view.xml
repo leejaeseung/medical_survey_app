@@ -24,10 +24,10 @@
                 android:background="@color/teal_A700">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/top_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="최종 정보 입력"
+                    android:text="제목"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold"
@@ -53,20 +53,7 @@
                         android:layout_height="match_parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintWidth_percent="0.8">
-
-                        <Button
-                            android:id="@+id/button5"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:text="설문 완료"
-                            android:textSize="24sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                        app:layout_constraintWidth_percent="0.8" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>

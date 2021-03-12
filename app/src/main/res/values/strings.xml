@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Practice App</string>
+    <string name="end_title">최종 정보 입력</string>
+
+    <!-- Buttons -->
+    <string name="prev_bt">이전 페이지로</string>
+    <string name="next_bt">다음 페이지로</string>
+    <string name="last_bt">마지막 페이지로</string>
+    <string name="close_bt">창닫기</string>
+    <string name="submit_bt">설문 완료</string>
 </resources>
