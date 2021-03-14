@@ -1,4 +1,4 @@
-package com.example.practiceapp;
+package com.cbu.medical_survey_app;
 
 import org.junit.Test;
 

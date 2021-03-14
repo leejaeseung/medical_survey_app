@@ -1,4 +1,4 @@
-package com.example.practiceapp.customView;
+package com.cbu.medical_survey_app.customView;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-import com.example.practiceapp.R;
+import com.cbu.medical_survey_app.R;
 
 public class SurveyViewControl extends ConstraintLayout {
 
@@ -39,7 +39,7 @@ public class SurveyViewControl extends ConstraintLayout {
         View v = li.inflate(R.layout.survey_view, this, false);
         addView(v);
 
-        text = (TextView)findViewById(R.id.top_title);
+        text = (TextView) findViewById(R.id.top_title);
         img = (ImageView)findViewById(R.id.title_img);
     }
 

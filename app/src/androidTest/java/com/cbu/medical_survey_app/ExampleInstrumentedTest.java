@@ -1,4 +1,4 @@
-package com.example.practiceapp;
+package com.cbu.medical_survey_app;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.practiceapp", appContext.getPackageName());
+        assertEquals("com.cbu.medical_survey_app", appContext.getPackageName());
     }
 }

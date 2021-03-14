@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:background="@color/bg_bt">
 
+<<<<<<< HEAD
             <TextView
                 android:id="@+id/top_title"
                 android:layout_width="wrap_content"
@@ -33,6 +34,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+=======
+>>>>>>> temp
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -46,8 +49,26 @@
                     android:src="@drawable/sample" />
             </FrameLayout>
 
+<<<<<<< HEAD
             <FrameLayout
                 android:id="@+id/frameLayout"
+=======
+            <TextView
+                android:id="@+id/top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_default"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/survey_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/survey_content"
+>>>>>>> temp
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
 
@@ -58,6 +79,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
+<<<<<<< HEAD
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout2"
@@ -68,6 +90,8 @@
                     android:layout_marginRight="40dp"
 
                     />
+=======
+>>>>>>> temp
             </FrameLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

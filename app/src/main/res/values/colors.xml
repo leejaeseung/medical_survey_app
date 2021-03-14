@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="transparency">#FFFFFFFF</color>
     <color name="bg_bt">#2AB2A2</color>
     <color name="text_black">#222222</color>
     <color name="text_black_gray">#555555</color>
