@@ -10,7 +10,8 @@
         android:id="@+id/surveyViewControl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:pageTitle="최종 정보 입력"
+        app:pageTitle="@string/end_title"
+        app:titleImg="@drawable/sample"
          />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

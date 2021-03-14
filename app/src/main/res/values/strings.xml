@@ -10,4 +10,7 @@
     <string name="last_bt">마지막 페이지로</string>
     <string name="close_bt">창닫기</string>
     <string name="submit_bt">설문 완료</string>
+
+    <!-- Imgae -->
+    <string name="img_default">null</string>
 </resources>

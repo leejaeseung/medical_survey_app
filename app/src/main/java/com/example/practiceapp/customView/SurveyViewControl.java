@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -13,6 +14,7 @@ import com.example.practiceapp.R;
 
 public class SurveyViewControl extends ConstraintLayout {
 
+    ImageView img;
     TextView text;
 
     public SurveyViewControl(Context context) {
@@ -38,6 +40,7 @@ public class SurveyViewControl extends ConstraintLayout {
         addView(v);
 
         text = (TextView)findViewById(R.id.top_title);
+        img = (ImageView)findViewById(R.id.title_img);
     }
 
     private void getAttrs(AttributeSet attrs) {
@@ -54,7 +57,9 @@ public class SurveyViewControl extends ConstraintLayout {
 
     private void setTypeArray(TypedArray typedArray) {
         String text_string = typedArray.getString(R.styleable.SurveyViewControl_pageTitle);
+        int img_src = typedArray.getResourceId(R.styleable.SurveyViewControl_titleImg, 0);
         text.setText(text_string);
+        img.setImageResource(img_src);
 
         typedArray.recycle();
     }
