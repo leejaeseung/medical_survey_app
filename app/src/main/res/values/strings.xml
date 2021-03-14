@@ -1,4 +1,6 @@
 <resources>
+    <!-- Title -->
+    <string name="title_default">제목</string>
     <string name="app_name">Practice App</string>
     <string name="end_title">최종 정보 입력</string>
 

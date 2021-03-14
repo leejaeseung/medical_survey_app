@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.example.practiceapp.SurveyViewControl
+    <com.example.practiceapp.customView.SurveyViewControl
         android:id="@+id/surveyViewControl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:pageTitle="@string/end_title"
+        app:pageTitle="최종 정보 입력"
          />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

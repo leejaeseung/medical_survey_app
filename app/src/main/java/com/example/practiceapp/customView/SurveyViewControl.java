@@ -1,4 +1,4 @@
-package com.example.practiceapp;
+package com.example.practiceapp.customView;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
+
+import com.example.practiceapp.R;
 
 public class SurveyViewControl extends ConstraintLayout {
 
