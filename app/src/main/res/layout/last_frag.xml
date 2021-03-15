@@ -178,7 +178,7 @@
 
     <EditText
         android:id="@+id/input_address_myself"
-        android:layout_width="350dp"
+        android:layout_width="428dp"
         android:layout_height="40dp"
         android:background="@drawable/round_box_gray"
         android:ems="10"
@@ -217,7 +217,7 @@
 
     <EditText
         android:id="@+id/input_ph_second_myself"
-        android:layout_width="265dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
@@ -241,7 +241,7 @@
 
     <EditText
         android:id="@+id/input_ph_second_asd"
-        android:layout_width="250dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
@@ -265,7 +265,7 @@
 
     <EditText
         android:id="@+id/input_address_other"
-        android:layout_width="350dp"
+        android:layout_width="428dp"
         android:layout_height="40dp"
         android:background="@drawable/round_box_gray"
         android:ems="10"
@@ -424,8 +424,9 @@
 
     <Button
         android:id="@+id/submit_bt"
-        android:layout_width="0dp"
-        android:layout_height="49dp"
+        android:layout_width="541dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/green_bt"
         android:fontFamily="@font/sandol_font"
         android:gravity="center"
@@ -434,9 +435,24 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_ph_second_asd"
+        app:layout_constraintVertical_bias="0.0"
         app:layout_constraintWidth_percent="0.9" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sandol_font"
+        android:text="귀하의 협조에 다시 한번 진심으로 감사드립니다."
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_bt"
+        app:layout_constraintVertical_bias="0.375" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
