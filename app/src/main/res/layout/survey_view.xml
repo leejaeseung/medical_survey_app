@@ -15,16 +15,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/green">
+            android:background="@color/green"
+            android:orientation="vertical">
 
             <FrameLayout
                 android:id="@+id/frameLayout"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_height="100dp">
 
                 <ImageView
                     android:id="@+id/title_img"
@@ -32,47 +32,39 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/img_default"
                     android:src="@drawable/sample" />
-            </FrameLayout>
 
-            <TextView
-                android:id="@+id/top_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/title_default"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/survey_top"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/top_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:text="@string/title_default"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:translationY="-50dp" />
+
+            </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/survey_top"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
 
-                android:layout_marginTop="75dp"
-
-                android:background="@drawable/round_page"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_marginTop="-30dp"
+                android:background="@drawable/round_page">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/survey_content"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:id="@+id/survey_content"
-                    >
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp">
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </FrameLayout>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
