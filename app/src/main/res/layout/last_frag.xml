@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="163dp"
         android:fontFamily="sans-serif"
-        android:text="1)   본 질문서에 응답하신 오늘 날짜를 기입해 주십시오."
+        android:text="1)   본 질문서에 응답하신 오늘 날짜를 선택해 주십시오."
         android:textColor="@color/text_black"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -27,17 +27,15 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/my_font"
         android:text="2)   여기 물음에 답해주신 항목중에 좀 더 분명하게 알기 위하여 귀하에게 연락을 해야 할 필요가 있을 수 있습니다. 작성해주신 분의 전화번호를 기입해 주세요."
         android:textColor="@color/text_black"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_today"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/input_today" />
 
     <TextView
         android:id="@+id/textView5"
@@ -53,30 +51,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_ph_first_myself"
         app:layout_constraintVertical_bias="0.049" />
-
-    <EditText
-        android:id="@+id/input_today"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/round_box_gray"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:paddingLeft="10dp"
-        android:paddingTop="5dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="5dp"
-        android:textColor="@color/text_black"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061"
-        app:layout_constraintWidth_percent="0.9" />
 
     <EditText
         android:id="@+id/input_ph_first_myself"
@@ -104,7 +78,7 @@
         app:layout_constraintVertical_bias="0.012" />
 
     <EditText
-        android:id="@+id/input_ph_first_asd"
+        android:id="@+id/input_ph_first_myself2"
         android:layout_width="90dp"
         android:layout_height="40dp"
         android:background="@drawable/round_box_gray"
@@ -178,7 +152,7 @@
 
     <EditText
         android:id="@+id/input_address_myself"
-        android:layout_width="428dp"
+        android:layout_width="400dp"
         android:layout_height="40dp"
         android:background="@drawable/round_box_gray"
         android:ems="10"
@@ -217,7 +191,7 @@
 
     <EditText
         android:id="@+id/input_ph_second_myself"
-        android:layout_width="300dp"
+        android:layout_width="272dp"
         android:layout_height="40dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
@@ -240,8 +214,8 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/input_ph_second_asd"
-        android:layout_width="300dp"
+        android:id="@+id/input_ph_second_myself2"
+        android:layout_width="272dp"
         android:layout_height="40dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
@@ -258,14 +232,14 @@
         android:textColor="@color/text_black"
         android:textColorHint="@color/text_gray"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/input_ph_first_asd"
-        app:layout_constraintStart_toEndOf="@+id/input_ph_first_asd"
-        app:layout_constraintTop_toTopOf="@+id/input_ph_first_asd"
+        app:layout_constraintBottom_toBottomOf="@+id/input_ph_first_myself2"
+        app:layout_constraintStart_toEndOf="@+id/input_ph_first_myself2"
+        app:layout_constraintTop_toTopOf="@+id/input_ph_first_myself2"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/input_address_other"
-        android:layout_width="428dp"
+        android:layout_width="400dp"
         android:layout_height="40dp"
         android:background="@drawable/round_box_gray"
         android:ems="10"
@@ -399,11 +373,11 @@
         android:layout_height="3dp"
         android:background="@color/black"
         android:translationY="-3dp"
-        app:layout_constraintBottom_toBottomOf="@+id/input_ph_first_asd"
-        app:layout_constraintEnd_toStartOf="@+id/input_ph_second_asd"
+        app:layout_constraintBottom_toBottomOf="@+id/input_ph_first_myself2"
+        app:layout_constraintEnd_toStartOf="@+id/input_ph_second_myself2"
         app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toEndOf="@+id/input_ph_first_asd"
-        app:layout_constraintTop_toTopOf="@+id/input_ph_first_asd"
+        app:layout_constraintStart_toEndOf="@+id/input_ph_first_myself2"
+        app:layout_constraintTop_toTopOf="@+id/input_ph_first_myself2"
         app:layout_constraintVertical_bias="0.567" />
 
     <TextView
@@ -423,8 +397,8 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/submit_bt"
-        android:layout_width="541dp"
+        android:id="@+id/bt_submit"
+        android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/green_bt"
@@ -436,7 +410,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_ph_second_asd"
+        app:layout_constraintTop_toBottomOf="@+id/input_ph_second_myself2"
         app:layout_constraintVertical_bias="0.0"
         app:layout_constraintWidth_percent="0.9" />
 
@@ -445,14 +419,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/sandol_font"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:text="귀하의 협조에 다시 한번 진심으로 감사드립니다."
         android:textColor="@color/green"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submit_bt"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_submit"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <CalendarView
+        android:id="@+id/input_today"
+        android:layout_width="355dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
