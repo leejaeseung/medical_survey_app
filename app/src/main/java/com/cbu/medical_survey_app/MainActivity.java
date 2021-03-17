@@ -29,7 +29,7 @@ public class MainActivity extends FragmentActivity {
 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.survey_content, new Last_Fragment());
+        fragmentTransaction.add(R.id.survey_content, new Last_Fragment(this));
         fragmentTransaction.commit();
     }
 
