@@ -1,10 +1,7 @@
 package com.cbu.medical_survey_app;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.widget.CalendarView;
-import android.widget.EditText;
 
 import androidx.fragment.app.FragmentActivity;
 

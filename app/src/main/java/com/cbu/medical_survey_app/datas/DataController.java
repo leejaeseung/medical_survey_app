@@ -6,4 +6,8 @@ public class DataController {
     public DataController() {
 
     }
+
+    public void setLastData(){
+
+    }
 }
