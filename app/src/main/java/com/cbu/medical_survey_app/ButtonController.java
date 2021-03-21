@@ -24,7 +24,7 @@ public class ButtonController {
 //        Intent intent = new Intent(nowContext, MainActivity.class);
 
         // 현재 뷰의 데이터들을 저장
-        MainActivity.dtc.saveLastData(nowContext);
+        MainActivity.dtc.saveData(nowContext);
 
         // 테스트용, 나중엔 종료 로직으로
         Fragment fragment = new Last_Fragment(nowContext);

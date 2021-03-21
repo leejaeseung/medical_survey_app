@@ -18,16 +18,20 @@ import com.cbu.medical_survey_app.R;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 
 public class Last_Fragment extends Fragment {
 
     private ButtonListener btl;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy년 MM월 dd일");
+    private Context nowContext;
+
+    public Last_Fragment() {
+
+    }
 
     public Last_Fragment(Context context) {
         btl = new ButtonListener(context);
+        nowContext = context;
     }
 
     // 프래그먼트가 만들어질 때 datas에서 데이터를 가져와 모든 뷰에 넣어줌
@@ -55,7 +59,7 @@ public class Last_Fragment extends Fragment {
         });
 
         // 프래그먼트에 데이터 세팅
-        MainActivity.dtc.setLastDataToView(vg);
+        MainActivity.dtc.setDataToView(vg);
 
         return vg;
     }

@@ -1,8 +1,10 @@
 package com.cbu.medical_survey_app;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.Surface;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -49,4 +51,21 @@ public class MainActivity extends FragmentActivity {
         }
         return super.dispatchTouchEvent(event);
     }
+
+//    @Override
+//    public void onConfigurationChanged(Configuration newConfig) {
+//        super.onConfigurationChanged(newConfig);
+//
+//        System.out.println("들어옴");
+//
+//        switch (newConfig.orientation) {
+//            case Configuration.ORIENTATION_PORTRAIT:
+////                dtc.saveData(this);
+//                break;
+//            case Configuration.ORIENTATION_LANDSCAPE:
+////                dtc.saveData(this);
+//                break;
+//        }
+//    }
+
 }
