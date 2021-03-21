@@ -43,21 +43,20 @@ public class DataController {
 
     }
 
-    public HashMap<String, String> getData(Context context) {
-        Fragment nowFragment = ((FragmentActivity)context).getSupportFragmentManager().findFragmentById(R.id.survey_content);
-
-        if(nowFragment instanceof Last_Fragment){
-            System.out.println("맞음");
-            return last_data.getData();
-        }
-        else {
-            System.out.println("아님");
-            return null;
-        }
-    }
+//    public HashMap<String, String> getData(Context context) {
+//        Fragment nowFragment = ((FragmentActivity)context).getSupportFragmentManager().findFragmentById(R.id.survey_content);
+//
+//        if(nowFragment instanceof Last_Fragment){
+//            System.out.println("맞음");
+//            return last_data.getData();
+//        }
+//        else {
+//            System.out.println("아님");
+//            return null;
+//        }
+//    }
 
     public void setDataToView(ViewGroup vg) {
-//        Fragment nowFragment = ((FragmentActivity)context).getSupportFragmentManager().findFragmentById(R.id.survey_content);
 
         switch (vg.getId()) {
             case R.id.last_frag: {

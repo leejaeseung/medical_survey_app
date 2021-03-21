@@ -2,7 +2,6 @@ package com.cbu.medical_survey_app.datas;
 
 import android.app.Activity;
 import android.content.Context;
-import android.util.Pair;
 import android.view.ViewGroup;
 import android.widget.CalendarView;
 import android.widget.EditText;
@@ -11,11 +10,8 @@ import com.cbu.medical_survey_app.R;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class Last_Data {
 
