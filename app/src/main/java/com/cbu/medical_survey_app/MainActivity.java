@@ -5,19 +5,19 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.CalendarView;
 import android.widget.EditText;
 
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.cbu.medical_survey_app.datas.DataController;
 import com.cbu.medical_survey_app.fragments.Last_Fragment;
 
 public class MainActivity extends FragmentActivity {
 
     private InputMethodManager imm;
+    public static DataController dtc = new DataController();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
