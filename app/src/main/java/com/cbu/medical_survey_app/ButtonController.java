@@ -33,5 +33,6 @@ public class ButtonController {
         fragmentTransaction.replace(R.id.survey_content, fragment);
         fragmentTransaction.commit();
 //        ((FragmentActivity)nowContext).startActivity(intent);
+        MainActivity.dtc.saveExcel(nowContext);
     }
 }

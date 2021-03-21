@@ -2,6 +2,7 @@ package com.cbu.medical_survey_app.datas;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Pair;
 import android.view.ViewGroup;
 import android.widget.CalendarView;
 import android.widget.EditText;
@@ -10,8 +11,11 @@ import com.cbu.medical_survey_app.R;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class Last_Data {
 
@@ -27,10 +31,10 @@ public class Last_Data {
     private String input_ph_second_myself2 = "";
 
     // 맵으로 하는게 나중에 편할 듯?
-    final private HashMap<String, String> mapped_data;
+    final private LinkedHashMap<String, String> mapped_data;
 
     public Last_Data() {
-        mapped_data = new HashMap<String, String>();
+        mapped_data = new LinkedHashMap<String, String>();
     }
 
     private String getString(CalendarView view) {
@@ -40,7 +44,7 @@ public class Last_Data {
         return view.getText().toString();
     }
 
-    public HashMap<String, String> getData() {
+    public LinkedHashMap<String, String> getData() {
         return mapped_data;
     }
 
