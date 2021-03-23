@@ -3082,7 +3082,6 @@
                     android:ems="10"
                     android:fontFamily="@font/roboto_bold"
                     android:inputType="textNoSuggestions"
-                    android:maxLength="4"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -3091,6 +3090,7 @@
                     app:layout_constraintStart_toEndOf="@+id/textView26"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.533" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -3134,5 +3134,92 @@
         </TableRow>
 
     </TableLayout>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_mainjob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27">
+
+        <RadioButton
+            android:id="@+id/radio_mainjob_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:button="@drawable/radio_bt"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingLeft="10dp"
+            android:text="아니오, 가장 오래된 근무지는 "
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_mainjob_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_bt"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingLeft="10dp"
+            android:text="예."
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/input_mainjon"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_underline"
+        android:ems="10"
+        android:fontFamily="@font/roboto_bold"
+        android:inputType="textNoSuggestions"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/radiogroup_mainjob"
+        app:layout_constraintTop_toTopOf="@+id/radiogroup_mainjob" />
+
+    <EditText
+        android:id="@+id/input_mainjon2"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_underline"
+        android:ems="10"
+        android:fontFamily="@font/roboto_bold"
+        android:inputType="textNoSuggestions|number"
+        android:maxLength="4"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text=" (직업 또는 직종)에 "
+        android:textColor="@color/text_black_gray"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/input_mainjon"
+        app:layout_constraintTop_toTopOf="@+id/input_mainjon" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text=" 년 근무"
+        android:textColor="@color/text_black_gray"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/input_mainjon2"
+        app:layout_constraintTop_toTopOf="@+id/input_mainjon2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
