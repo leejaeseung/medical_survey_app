@@ -1,10 +1,8 @@
 package com.cbu.medical_survey_app;
 
 import android.content.Context;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MotionEvent;
-import android.view.Surface;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -14,6 +12,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.cbu.medical_survey_app.datas.DataController;
+import com.cbu.medical_survey_app.fragments.Job_Fragment;
 import com.cbu.medical_survey_app.fragments.Last_Fragment;
 
 public class MainActivity extends FragmentActivity {
@@ -25,13 +24,13 @@ public class MainActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.last_page);
+        setContentView(R.layout.survey_page);
 
         imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.survey_content, new Last_Fragment(this));
+        fragmentTransaction.add(R.id.survey_content, new Job_Fragment(this));
         fragmentTransaction.commit();
     }
 
