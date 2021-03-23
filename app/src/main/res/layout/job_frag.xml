@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="232dp"
+        android:layout_marginBottom="132dp"
         android:fontFamily="sans-serif"
         android:text="30)   현재 무슨 직종에 종사하고 계십니까?(하나만 표시하여 주십시오. 괄호안에는 구체적인 직무 혹은 직위를 적어 주십시오.)"
         android:textColor="@color/text_black"
@@ -57,7 +57,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/table_production"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.271" />
 
     <TableLayout
         android:id="@+id/table_position"
@@ -3170,7 +3170,7 @@
     </RadioGroup>
 
     <EditText
-        android:id="@+id/input_mainjon"
+        android:id="@+id/input_mainjob"
         android:layout_width="52dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edittext_underline"
@@ -3183,7 +3183,7 @@
         app:layout_constraintTop_toTopOf="@+id/radiogroup_mainjob" />
 
     <EditText
-        android:id="@+id/input_mainjon2"
+        android:id="@+id/input_mainjob_year"
         android:layout_width="52dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edittext_underline"
@@ -3204,10 +3204,10 @@
         android:fontFamily="@font/roboto_bold"
         android:gravity="center"
         android:text=" (직업 또는 직종)에 "
-        android:textColor="@color/text_black_gray"
+        android:textColor="@color/text_black"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/input_mainjon"
-        app:layout_constraintTop_toTopOf="@+id/input_mainjon" />
+        app:layout_constraintStart_toEndOf="@+id/input_mainjob"
+        app:layout_constraintTop_toTopOf="@+id/input_mainjob" />
 
     <TextView
         android:id="@+id/textView29"
@@ -3217,9 +3217,9 @@
         android:fontFamily="@font/roboto_bold"
         android:gravity="center"
         android:text=" 년 근무"
-        android:textColor="@color/text_black_gray"
+        android:textColor="@color/text_black"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/input_mainjon2"
-        app:layout_constraintTop_toTopOf="@+id/input_mainjon2" />
+        app:layout_constraintStart_toEndOf="@+id/input_mainjob_year"
+        app:layout_constraintTop_toTopOf="@+id/input_mainjob_year" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
