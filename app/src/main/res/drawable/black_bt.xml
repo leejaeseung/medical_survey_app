@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:top="2dp"
+        android:right="2dp"
+        android:left="2dp"
+        android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <corners android:topRightRadius="10dp"
+                android:topLeftRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp"/>
+            <solid android:color="@color/alert_bt"/>
+        </shape>
+    </item>
+
+</layer-list>

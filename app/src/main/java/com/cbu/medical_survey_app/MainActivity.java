@@ -35,7 +35,7 @@ public class MainActivity extends FragmentActivity {
         TextView title = (TextView)findViewById(R.id.top_title);
         title.setText("직업 사항");
         ImageView img = (ImageView)findViewById(R.id.title_img);
-        img.setImageResource(-1);
+        img.setImageResource(0);
 
         imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
 

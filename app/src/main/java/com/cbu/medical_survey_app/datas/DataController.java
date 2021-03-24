@@ -22,29 +22,42 @@ import java.io.IOException;
 import java.util.Map;
 
 public class DataController {
+
+    final private ValidChecker vc = new ValidChecker();
     final private Last_Data last_data;
+    final private Job_Data job_data;
 
     public DataController() {
         last_data = new Last_Data();
+        job_data = new Job_Data();
     }
 
     // survey_content에 연결된 프래그먼트에 따라 저장할 데이터 분기
-    public void saveData(Context context) {
+    public boolean saveData(Context context) {
         Fragment nowFragment = ((FragmentActivity)context).getSupportFragmentManager().findFragmentById(R.id.survey_content);
 
         if(nowFragment instanceof Last_Fragment){
             System.out.println("설문 완료 Frag");
             last_data.saveData(context);
+            return vc.lastChecker(last_data.getData());
         }
         else if(nowFragment instanceof Job_Fragment){
             System.out.println("직업사항 Frag");
+            job_data.saveData(context);
 
         }
         else {
             System.out.println("아님");
         }
 
+//        if(openAlert) {
+//            System.out.println("경고창 띄우는 로직");
+//        }
+//        else{
+//            System.out.println("다음 페이지 가는 로직");
+//        }
 
+        return true;
     }
 
 //    public HashMap<String, String> getData(Context context) {
@@ -65,6 +78,9 @@ public class DataController {
         switch (vg.getId()) {
             case R.id.last_frag: {
                 last_data.setDataToView(vg);
+            }
+            case R.id.job_frag: {
+                job_data.setDataToView(vg);
             }
         }
 
