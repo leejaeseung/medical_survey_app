@@ -67,4 +67,8 @@ public class SurveyViewControl extends ConstraintLayout {
     void setText(String text_string){
         text.setText(text_string);
     }
+
+    void setImg(int img_src) {
+        img.setImageResource(img_src);
+    }
 }

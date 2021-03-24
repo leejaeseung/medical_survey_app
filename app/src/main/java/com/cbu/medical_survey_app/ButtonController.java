@@ -3,6 +3,8 @@ package com.cbu.medical_survey_app;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -15,9 +17,13 @@ public class ButtonController {
 
     // ButtonController가 만들어진 Context
     final private Context nowContext;
+    private TextView title;
+    private ImageView title_img;
 
     public ButtonController(Context context) {
         nowContext = context;
+        title = (TextView)((Activity)context).findViewById(R.id.top_title);
+        title_img = (ImageView)((Activity)context).findViewById(R.id.title_img);
     }
 
     // 버튼이 눌렸을 때 동작들(datas에 저장하거나, 제출)
@@ -44,6 +50,9 @@ public class ButtonController {
 
     public void jobComplete() {
         MainActivity.dtc.saveData(nowContext);
+
+        title.setText(R.string.last_title);
+        title_img.setImageResource(-1);
 
         Fragment fragment = new Last_Fragment(nowContext);
         FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();

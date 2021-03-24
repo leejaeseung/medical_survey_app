@@ -1,19 +1,25 @@
 package com.cbu.medical_survey_app;
 
 import android.content.Context;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.cbu.medical_survey_app.customView.SurveyViewControl;
 import com.cbu.medical_survey_app.datas.DataController;
 import com.cbu.medical_survey_app.fragments.Job_Fragment;
 import com.cbu.medical_survey_app.fragments.Last_Fragment;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends FragmentActivity {
 
@@ -25,6 +31,11 @@ public class MainActivity extends FragmentActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.survey_page);
+
+        TextView title = (TextView)findViewById(R.id.top_title);
+        title.setText("직업 사항");
+        ImageView img = (ImageView)findViewById(R.id.title_img);
+        img.setImageResource(-1);
 
         imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
 

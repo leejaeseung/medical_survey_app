@@ -10,7 +10,7 @@
         android:id="@+id/surveyViewControl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:pageTitle="@string/last_title"
+        app:pageTitle="@string/title_default"
          />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
