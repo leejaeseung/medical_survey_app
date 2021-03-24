@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 import com.cbu.medical_survey_app.R;
+import com.cbu.medical_survey_app.fragments.Job_Fragment;
 import com.cbu.medical_survey_app.fragments.Last_Fragment;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -32,8 +33,12 @@ public class DataController {
         Fragment nowFragment = ((FragmentActivity)context).getSupportFragmentManager().findFragmentById(R.id.survey_content);
 
         if(nowFragment instanceof Last_Fragment){
-            System.out.println("맞음");
+            System.out.println("설문 완료 Frag");
             last_data.saveData(context);
+        }
+        else if(nowFragment instanceof Job_Fragment){
+            System.out.println("직업사항 Frag");
+
         }
         else {
             System.out.println("아님");

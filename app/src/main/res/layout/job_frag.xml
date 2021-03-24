@@ -3222,4 +3222,57 @@
         app:layout_constraintStart_toEndOf="@+id/input_mainjob_year"
         app:layout_constraintTop_toTopOf="@+id/input_mainjob_year" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="525dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup_mainjob">
+
+        <Button
+            android:id="@+id/bt_job_prev"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:background="@drawable/white_bt"
+            android:drawableStart="@drawable/bt_arrow_prev"
+            android:drawableLeft="@drawable/bt_arrow_prev"
+            android:drawablePadding="-30dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:text="이전 페이지로"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_job_next"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/bt_job_next"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:background="@drawable/green_bt"
+            android:drawableEnd="@drawable/bt_arrow_next"
+            android:drawableRight="@drawable/bt_arrow_next"
+            android:drawablePadding="-30dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:text="마지막 페이지로"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
