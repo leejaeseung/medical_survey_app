@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/normal_frag1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1) 귀하의 성별을 무엇입니까?"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:id="@+id/pro1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/pro1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남자"
+                android:textColor="@color/text_black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/pro1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여자"
+                android:textColor="@color/text_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+    </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2) 귀하의 현재 결혼상태는 다음 중 어느것입니까?"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/pro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/pro2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="미혼"
+                android:textColor="@color/text_black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/pro2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기혼(부부가 같이 살고 있다)"
+                android:textColor="@color/text_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/pro2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="별거"
+                android:textColor="@color/text_black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/pro2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이혼"
+                android:textColor="@color/text_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/pro2_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사별"
+                android:textColor="@color/text_black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/pro2_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주말부부"
+                android:textColor="@color/text_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3) 생년월일(호적상이 아닌 실제)은 언제입니까?"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/pro3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_ _ _ _년 _ _월 _ _일"
+            android:clickable="true"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    ("
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/pro3_2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 띠)"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="출생시 어머니의 나이는?  "
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/pro3_3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="세"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주민등록번호를 적어 주십시오."
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/pro3_4"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="6"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/pro3_5"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="7"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4) 현재 키와 몸무게는 어떻게 되십니까?"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="키"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <EditText
+
+            android:id="@+id/pro4_1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="3"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm      "
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="몸무게"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/pro4_2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="3"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5) 현재 사시는 지역(군,구)에서 사신 기간은?"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/pro5_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/pro5_2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="년"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/pro5_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="모르겠다."
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6) 20세부터 25세때의 몸무게는 얼마쯤이었습니까?"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/pro6_1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="3"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30세부터 40세떄의 몸무게는 얼마쯤이었습니까?"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/pro6_2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="3"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지금까지 가장 무거웠던 체중은 얼마였습니까?"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/pro6_3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="3"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="7) 귀하의 최종학력은?"
+           android:textColor="@color/text_black"
+           android:textSize="14sp"
+           android:textStyle="bold"/>
+
+       <RadioGroup
+           android:id="@+id/pro7"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <RadioButton
+               android:id="@+id/pro7_1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="학교에다니지 않았다."
+               android:textColor="@color/text_black"
+               android:textSize="14sp"
+               android:textStyle="bold"/>
+           <RadioButton
+               android:id="@+id/pro7_2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="국민학교 중퇴"
+               android:textColor="@color/text_black"
+               android:textSize="14sp"
+               android:textStyle="bold"/>
+           <RadioButton
+               android:id="@+id/pro7_3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="국민학교 졸업 또는 중학교 중퇴"
+               android:textColor="@color/text_black"
+               android:textSize="14sp"
+               android:textStyle="bold"/>
+           <RadioButton
+               android:id="@+id/pro7_4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="중학교 졸업 또는 고등학교 중퇴"
+               android:textColor="@color/text_black"
+               android:textSize="14sp"
+               android:textStyle="bold"/>
+           <RadioButton
+               android:id="@+id/pro7_5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="고등학교 졸업"
+               android:textColor="@color/text_black"
+               android:textSize="14sp"
+               android:textStyle="bold"/>
+           <RadioButton
+               android:id="@+id/pro7_6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="기술(전문)학교 졸업"
+               android:textColor="@color/text_black"
+               android:textSize="14sp"
+               android:textStyle="bold"/>
+           <RadioButton
+               android:id="@+id/pro7_7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="대학교 중퇴"
+               android:textColor="@color/text_black"
+               android:textSize="14sp"
+               android:textStyle="bold"/>
+           <RadioButton
+               android:id="@+id/pro7_8"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="대학교 졸업"
+               android:textColor="@color/text_black"
+               android:textSize="14sp"
+               android:textStyle="bold"/>
+           <RadioButton
+               android:id="@+id/pro7_9"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="대학교 이상"
+               android:textColor="@color/text_black"
+               android:textSize="14sp"
+               android:textStyle="bold"/>
+
+       </RadioGroup>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8) 현재 살고있는 댁에서는 몇 사람의 식구가 함께 살고있습니까?"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/pro8_1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="명"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/pro8_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="모르겠다."
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9) 귀하 가족의 한달 총 수입은 어느 정도입니까?"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/pro9_1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="만원"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/next_btn_1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/green_bt"
+        android:text="다음 페이지로"
+        android:clickable="true"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="873dp" />
+
+
+</LinearLayout>

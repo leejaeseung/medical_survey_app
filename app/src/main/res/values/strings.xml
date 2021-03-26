@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">medical_survey_ver2</string>
+    <!-- Title -->
+    <string name="name">성명</string>
+    <string name="address">주소</string>
+    <string name="img_default">null</string>
+    <string name="title_default">제목</string>
+    <string name="normal_title">일반 사항</string>
+    <string name="smoke_title">흡연 및 음주 습관사항</string>
+    <string name="sleep_title">수면, 육체적 운동 및 활동사항</string>
+    <string name="food_title">식품 섭취 빈도 조사법</string>
+    <string name="last_title">최종 정보 입력</string>
+    <!-- Buttons -->
+    <string name="prev_bt">이전 페이지로</string>
+    <string name="next_bt">다음 페이지로</string>
+    <string name="last_bt">마지막 페이지로</string>
+    <string name="close_bt">창닫기</string>
+    <string name="submit_bt">설문 완료</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

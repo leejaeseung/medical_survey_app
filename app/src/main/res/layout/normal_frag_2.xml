@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:id="@+id/normalfrag_2">
+
+    <Button
+        android:id="@+id/pre_btn_1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/white_bt"
+        android:text="이전 페이지로"
+        android:clickable="true"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="873dp" />
+    <Button
+        android:id="@+id/next_btn_2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/green_bt"
+        android:text="다음 페이지로"
+        android:clickable="true"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="873dp" />
+</LinearLayout>

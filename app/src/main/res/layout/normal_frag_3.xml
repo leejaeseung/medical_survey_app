@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/normalfrag_3">
+
+
+
+    <com.example.cbu_medical_survey_app.customView.SurveyViewControl
+        android:id="@+id/surveyViewControl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:pageTitle="@string/normal_title"
+        app:titleImg="@drawable/normal_top">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/frameLayout1"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+
+                <Button
+                    android:id="@+id/pre_btn_2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginBottom="54dp"
+                    android:background="@drawable/white_bt"
+                    android:text="이전 페이지로" />
+
+                <Button
+                    android:id="@+id/next_btn_3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/pre_btn_2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="92dp"
+                    android:background="@drawable/green_bt"
+                    android:text="다음 페이지로" />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+
+    </com.example.cbu_medical_survey_app.customView.SurveyViewControl>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
